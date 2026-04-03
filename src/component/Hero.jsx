@@ -1,21 +1,28 @@
-import Orb from './Orb';
+import PixelSnow from './PixelSnow'
 
 function Hero() {
     return (
-        <div>
-            <div className="w-full items-center bg-black sticky top-0 z-10">
-                <Orb
-                    hoverIntensity={2}
-                    rotateOnHover
-                    hue={0}
-                    forceHoverState={false}
-                    backgroundColor="#000000"
+        <div className="">
+            <div className="relative w-full h-screen bg-black flex items-center justify-center -z-10">
+                <PixelSnow
+                    color="#ffffff"
+                    flakeSize={0.01}
+                    minFlakeSize={1.25}
+                    pixelResolution={340}
+                    speed={1.25}
+                    density={0.3}
+                    direction={125}
+                    brightness={1}
+                    depthFade={8}
+                    farPlane={20}
+                    gamma={0.4545}
+                    variant="snowflake"
                 />
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white">
+                    <h1 className="text-6xl font-bold text-center mt-8">Hello, I'm <span className="text-blue-500">Keith</span>. I'm an aspiring developer at <span className="text-blue-500">Western Institute of Technology</span>.</h1>
+                </div>
             </div>
-        <div>
-            <h1 className="text-4xl font-bold text-center mt-8">Welcome to My Portfolio</h1>
-            <p className="text-center mt-4 text-lg">Explore my projects and skills</p>
-        </div>
+
 
         </div>
     );
