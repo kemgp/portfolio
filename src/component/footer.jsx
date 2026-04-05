@@ -8,7 +8,7 @@ function Footer() {
                 <div className="flex flex-col">
                     <p className="text-gray-500 text-sm">&copy; 2024 Keith Erwin Mikhail Patiño. All rights reserved.</p>
                     <p className="text-gray-500 text-sm">Designed and Developed by Keith Erwin Mikhail Patiño</p>
-                    <p className="text-gray-500 text-sm">Iloilo City, Pilippines</p>
+                    <p className="text-gray-500 text-sm">Iloilo City, Philippines</p>
                 </div>
                 <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-8 md:static md:transform-none">
                 </div>
