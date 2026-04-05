@@ -25,7 +25,7 @@ function Hero() {
                     />
                 </div>
 
-                <div className="absolute top-2/5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white gap-12 flex flex-col">
+                <div className="absolute top-2/5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white gap-12 flex flex-col py-10 items-center justify-center mt-24">
                     <div className="flex flex-col items-center justify-center gap-0">
                         <h1 className="font-serif text-9xl text-left mt-8 text-white">Keith Erwin</h1>
                         <h1 className="font-serif text-9xl mt-8 text-center text-gray-400 italic">Patiño</h1>
