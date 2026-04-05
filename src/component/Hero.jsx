@@ -9,7 +9,7 @@ import downarrow from '../assets/downarrow.svg';
 function Hero() {
     return (
         <div className="">
-            <div className="relative w-full h-screen bg-black overflow-hidden">
+            <div className="relative w-full h-screen bg-black overflow-hidden mx-auto py-10">
 
                 <div className="absolute inset-0 z-0 opacity-55">
                     <ShapeGrid
@@ -37,12 +37,16 @@ function Hero() {
                             <h1 className="text-2xl text-center text-gray-400">Web Developer. Iloilo City, Philippines</h1>
                         </div>
                         <div className="flex items-center justify-center gap-4 mt-4">
+                            <a href="#contact">
                             <button className="bg-white text-black rounded-full px-12 py-4 mt-12 text-2xl font-light transition duration-500 text-center items-center hover:scale-102 hover:ring-2 hover:ring-black hover:cursor-pointer">
                                 <div className="flex items-center justify-center gap-2">
                                     Let's Work Together!<img className="w-6 h-6 ml-2" src={rightarrow} alt="Right Arrow" />
                                 </div></button>
-                            <a href=""></a>
+                            </a>
+                            <a href="#projects">
                             <button className="bg-gray-500 text-white rounded-full px-12 py-4 mt-12 text-2xl font-light transition duration-500 text-center items-center hover:scale-102 hover:ring-2 hover:ring-black hover:cursor-pointer">View My Work</button>
+                            </a>
+
                         </div>
                         <div className="flex items-center justify-center gap-4 mt-4">
                             <a href="https://www.github.com/kemgp" target="_blank" rel="noopener noreferrer" className="p-2 bg-transparent text-gray-700 rounded-full hover:scale-102 hover:ring-black hover:ring-2 transition duration-500 hover:cursor-pointer" aria-label="GitHub" >

@@ -2,6 +2,8 @@ import Hero from './component/Hero'
 import Navbar from './component/Navbar'
 import About from './component/About'
 import Projects from './component/Projects'
+import Footer from './component/footer'
+import Contact from './component/contact'
 
 function App() {
   return (
@@ -17,17 +19,10 @@ function App() {
         <Projects />
       </section>
       <section
-        id="skills"
-        className="min-h-screen w-full relative bg-orange-500 flex items-center justify-center text-center flex-col gap-10 text-white p-52 scroll-mt-28"
-      >
-        <h1 className="text-5xl font-bold">Section 1</h1>
+        id="contact" className="scroll-mt-28">
+        <Contact />
       </section>
-      <section
-        id="contact"
-        className="min-h-screen w-full relative bg-yellow-500 flex items-center justify-center text-center flex-col gap-10 text-white p-52 scroll-mt-28"
-      >
-        <h1 className="text-5xl font-bold">Section 2</h1>
-      </section>
+      <Footer />
     </div>
   )
 }

@@ -7,10 +7,10 @@ import react from '../assets/react.svg';
 import tailwind from '../assets/tailwind.svg';
 import expressjs from '../assets/expressjs.svg';
 import figma from '../assets/figma.svg';
-
+import html5 from '../assets/html5.svg';
 function About() {
     return (
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 py-24">
             <div className="flex-col justify-center bg-black ">
 
                 <div className="flex flex-col md:flex-row bg-black items-center justify-center py-20">
@@ -23,7 +23,7 @@ function About() {
                     </div>
                     <div className="md:2/3 bg-black flex flex-col items-start justify-start p-10 gap-10 text-left">
                         <h1 className="text-7xl font-serif font-bold text-white">I create applications with lasting impact.</h1>
-                        <p className="text-2xl text-gray-500">Creating platforms that combine technical ability and artistic vision.</p>
+                        <p className="text-2xl font-light text-gray-500">Creating platforms that combine technical ability and artistic vision.</p>
                         <div className="flex items-center gap-4 pt-4">
                             <span className="h-px w-12 bg-gray-500"></span>
                             <span className="text-gray-500 uppercase">KEITH ERWIN MIKHAIL PATIÑO</span>
@@ -33,6 +33,12 @@ function About() {
                 <div className="w-full mb-10">
                     <div className="pt-8 pb-20 border-t border-gray-500"></div>
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 pt-8 ">
+                        <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
+                            <div className="flex flex-col items-center justify-center gap-4">
+                                <img className="w-32 h-32" src={html5} alt="HTML5" />
+                                <h1 className="text-2xl font-bold text-white">HTML5</h1>
+                            </div>
+                        </SpotlightCard>
                         <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
                             <div className="flex flex-col items-center justify-center gap-4">
                                 <img className="w-32 h-32" src={css} alt="CSS" />
