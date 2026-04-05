@@ -3,8 +3,8 @@ import email from '../assets/email.svg';
 import phone from '../assets/phone.svg';
 function Contact() {
     return (
-        <div className="container mx-auto px-4 py-24">
-            <div className="flex-col justify-center bg-black ">
+        <div className="border-t border-gray-500 px-4 py-24">
+            <div className="container mx-auto flex-col justify-center bg-black ">
 
                 <div className="flex flex-col md:flex-row bg-black items-center justify-center py-20">
                     <div className="h-full w-full relative bg-black flex items-center flex-col text-white px-10 py-14 gap-10">
