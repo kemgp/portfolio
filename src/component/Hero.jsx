@@ -38,13 +38,13 @@ function Hero() {
                         </div>
                         <div className="flex items-center justify-center gap-4 mt-4">
                             <a href="#contact">
-                            <button className="bg-white text-black rounded-full px-12 py-4 mt-12 text-2xl font-light transition duration-500 text-center items-center hover:scale-102 hover:ring-2 hover:ring-black hover:cursor-pointer">
+                            <button className="bg-white text-black rounded-full px-12 py-4 mt-12 text-2xl font-bold transition duration-500 text-center items-center hover:scale-102 hover:ring-2 hover:ring-black hover:cursor-pointer">
                                 <div className="flex items-center justify-center gap-2">
                                     Let's Work Together!<img className="w-6 h-6 ml-2" src={rightarrow} alt="Right Arrow" />
                                 </div></button>
                             </a>
                             <a href="#projects">
-                            <button className="bg-gray-500 text-white rounded-full px-12 py-4 mt-12 text-2xl font-light transition duration-500 text-center items-center hover:scale-102 hover:ring-2 hover:ring-black hover:cursor-pointer">View My Work</button>
+                            <button className="bg-gray-500 text-white rounded-full px-12 py-4 mt-12 text-2xl font-bold transition duration-500 text-center items-center hover:scale-102 hover:ring-2 hover:ring-black hover:cursor-pointer">View My Work</button>
                             </a>
 
                         </div>

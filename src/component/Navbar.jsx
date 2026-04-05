@@ -20,7 +20,7 @@ function Navbar() {
                     </li>
                 ))}
             </ul>
-            <a href='#contact' className="bg-white text-black rounded-full px-12 py-4 text-xl font-light hover:ring-black hover:ring-2 items-center hover:bg-gray-500 hover:scale-105">Contact</a>
+            <a href='#contact' className="bg-white text-black rounded-full px-12 py-4 text-xl font-bold hover:ring-black hover:ring-2 items-center  hover:scale-105">Contact</a>
                                 
         </div>
     );
