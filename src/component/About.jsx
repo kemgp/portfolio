@@ -10,57 +10,75 @@ import figma from '../assets/figma.svg';
 
 function About() {
     return (
-        <div className="flex relative min-h-screen w-full">
-        
-            <div className="relative grid grid-cols-2 -z-10">
-                <div className="min-h-screen w-full relative bg-black flex items-center flex-col gap-10 text-white p-52">
-                    <div className="w-1/2 rounded-full overflow-hidden outline-style-solid outline-10 outline-blue-500">
-                        <img src={mypic} alt="My Pic" />
-                    </div>
-                    <p className=" text-2xl text-justify">I am an aspiring <span className="font-bold text-blue-500">Software Engineer</span> with a deep passion for creating innovative solutions with <span className="font-bold text-blue-500">real impact</span>. Combining creativity and technical expertise, I strive to build applications that make a <span className="font-bold text-blue-500">difference</span>.</p>
-                </div>
-                <div className="min-h-screen w-full relative bg-black flex items-center text-center flex-col gap-10 text-white p-52 ">
-                    <div className="relative grid grid-cols-3 gap-y-10 gap-x-10">
-                        <SpotlightCard className="custom-spotlight-card items-center justify-center " spotlightColor="rgba(0, 229, 255, 0.2)">
-                            <div className="flex flex-col items-center justify-center gap-4">
-                            <img className="w-32 h-32" src={css} alt="CSS" />
-                            <h1 className="text-2xl font-bold">CSS</h1>
-                            </div>
-                        </SpotlightCard>
-                        <SpotlightCard className="custom-spotlight-card items-center justify-center " spotlightColor="rgba(0, 229, 255, 0.2)">
-                            <div className="flex flex-col items-center justify-center gap-4">
-                            <img className="w-32 h-32" src={mongodb} alt="MongoDB"/>
-                            <h1 className="text-2xl font-bold">MongoDB</h1>
-                            </div>
-                        </SpotlightCard>
-                        <SpotlightCard className="custom-spotlight-card items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
-                            <div className="flex flex-col items-center justify-center gap-4">
-                            <img className="w-32 h-32" src={nodejs} alt="NodeJS" />
-                            <h1 className="text-2xl font-bold">NodeJS</h1>
-                            </div>
-                        </SpotlightCard>
-                        <SpotlightCard className="custom-spotlight-card items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
-                            <div className="flex flex-col items-center justify-center gap-4">
-                            <img className="w-32 h-32" src={react} alt="React" />
-                            <h1 className="text-2xl font-bold">React</h1>
-                            </div>
-                        </SpotlightCard>
-                        <SpotlightCard className="custom-spotlight-card items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
-                            <div className="flex flex-col items-center justify-center gap-4">
-                            <img className="w-32 h-32" src={tailwind} alt="Tailwind" />
-                            <h1 className="text-2xl font-bold">Tailwind</h1>
-                            </div>
-                        </SpotlightCard>
-                        <SpotlightCard className="custom-spotlight-card items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
-                            <div className="flex flex-col items-center justify-center gap-4">
-                            <img className="w-32 h-32" src={figma} alt="Figma" />
-                            <h1 className="text-2xl font-bold">Figma</h1>
-                            </div>
+        <div className="container mx-auto px-4">
+            <div className="flex-col justify-center bg-black ">
 
-                        </SpotlightCard>
+                <div className="flex flex-col md:flex-row bg-black items-center justify-center py-20">
+                    <div className="min-h-screen w-full relative bg-black flex items-center flex-col text-white px-30 py-32 gap-10">
+                        <div className="w-full md:1/3 group relative">
+                            <div className="absolute inset-0 border border-(--border-color) rounded-sm translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+                            <img className="grayscale group-hover:grayscale-0 transition duration-300 " src={mypic} alt="My Pic" />
+                        </div>
+
+                    </div>
+                    <div className="md:2/3 bg-black flex flex-col items-start justify-start p-10 gap-10 text-left">
+                        <h1 className="text-7xl font-serif font-bold text-white">I create applications with lasting impact.</h1>
+                        <p className="text-2xl text-gray-500">Creating platforms that combine technical ability and artistic vision.</p>
+                        <div className="flex items-center gap-4 pt-4">
+                            <span className="h-px w-12 bg-gray-500"></span>
+                            <span className="text-gray-500 uppercase">KEITH ERWIN MIKHAIL PATIÑO</span>
+                        </div>
                     </div>
                 </div>
+                <div className="w-full mb-10">
+                    <div className="pt-8 pb-20 border-t border-gray-500"></div>
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 pt-8 ">
+                        <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
+                            <div className="flex flex-col items-center justify-center gap-4">
+                                <img className="w-32 h-32" src={css} alt="CSS" />
+                                <h1 className="text-2xl font-bold text-white">CSS</h1>
+                            </div>
+                        </SpotlightCard>
+                        <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
+                            <div className="flex flex-col items-center justify-center gap-4">
+                                <img className="w-32 h-32" src={react} alt="React" />
+                                <h1 className="text-2xl font-bold text-white">React</h1>
+                            </div>
+                        </SpotlightCard>
+                        <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
+                            <div className="flex flex-col items-center justify-center gap-4">
+                                <img className="w-32 h-32" src={mongodb} alt="MongoDB" />
+                                <h1 className="text-2xl font-bold text-white">MongoDB</h1>
+                            </div>
+                        </SpotlightCard>
+                        <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
+                            <div className="flex flex-col items-center justify-center gap-4">
+                                <img className="w-32 h-32" src={nodejs} alt="Node.js" />
+                                <h1 className="text-2xl font-bold text-white">Node.js</h1>
+                            </div>
+                        </SpotlightCard>
+                        <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
+                            <div className="flex flex-col items-center justify-center gap-4">
+                                <img className="w-32 h-32" src={tailwind} alt="Tailwind CSS" />
+                                <h1 className="text-2xl font-bold text-white">Tailwindcss</h1>
+                            </div>
+                        </SpotlightCard>
+                        <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
+                            <div className="flex flex-col items-center justify-center gap-4">
+                                <img className="w-32 h-32" src={expressjs} alt="Express.js" />
+                                <h1 className="text-2xl font-bold text-white">Express.js</h1>
+                            </div>
+                        </SpotlightCard>
+                        <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
+                            <div className="flex flex-col items-center justify-center gap-4">
+                                <img className="w-32 h-32" src={figma} alt="Figma" />
+                                <h1 className="text-2xl font-bold text-white">Figma</h1>
+                            </div>
+                        </SpotlightCard>
+                    </div>
 
+
+                </div>
             </div>
         </div>
 

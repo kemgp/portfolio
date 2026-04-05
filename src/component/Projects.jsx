@@ -37,7 +37,7 @@ function Projects() {
                                         Bayanihan
                                     </p>
                                     <p className="mt-2 max-w-lg text-sm/6 text-white max-lg:text-center">
-                                        A service on-demand that connects handymen wiot
+                                        A service on-demand that connects handymen with customers in need of their services. It provides a convenient platform for users to find and book skilled professionals for various tasks, ensuring efficient and reliable service delivery.
                                     </p>
                                 </div>
                                 <div className="@container relative min-h-120 w-full grow max-lg:mx-auto max-lg:max-w-sm">
