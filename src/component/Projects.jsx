@@ -1,9 +1,4 @@
-import ScrollFloat from './ScrollFloat';
-import FlowingMenu from './FlowingMenu';
-import bayanihan from '../assets/bayanihan.svg';
-import studyus from '../assets/studyus.png';
-import bayanihanhero from '../assets/bayanihanhero.png';
-
+import {motion} from 'framer-motion';
 const demoItems = [
     { link: '#', text: 'BAYANIHAN', image: 'https://picsum.photos/600/400?random=1' },
     { link: '#', text: 'STUDYUS', image: 'https://picsum.photos/600/400?random=2' },
@@ -13,7 +8,7 @@ const demoItems = [
 ];
 function Projects() {
     return (
-        <div className="py-24 md:py-32 relative bg-black z-10 overflow-hidden border-t border-gray-500">
+        <motion.div className="py-24 md:py-32 relative bg-black z-10 overflow-hidden border-t border-gray-500" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 0.5 }} variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}>
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-24 gap-8">
                     <h1 className="text-8xl font-serif font-bold text-white">Selected Works</h1>
@@ -45,7 +40,7 @@ function Projects() {
                     </a>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 
