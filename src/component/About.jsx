@@ -37,77 +37,7 @@ function About() {
                         </motion.div>
                     </div>
                 </div>
-                <div className="w-full mb-10">
-                    <div className="pt-8 pb-20 border-t border-gray-500"></div>
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 pt-8 ">
-                        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 1, delay: 0 }} variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}>
-                        <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
-                            <div className="flex flex-col items-center justify-center gap-4">
-                                <img className="w-32 h-32" src={html5} alt="HTML5" />
-                                <h1 className="text-2xl font-bold text-white">HTML5</h1>
-                            </div>
-                        </SpotlightCard>
-                        </motion.div>
-                        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 1, delay: 0.2 }} variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}>
-                        <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
-                            <div className="flex flex-col items-center justify-center gap-4">
-                                <img className="w-32 h-32" src={css} alt="CSS" />
-                                <h1 className="text-2xl font-bold text-white">CSS</h1>
-                            </div>
-                        </SpotlightCard>
-                        </motion.div>
-                        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 1, delay: 0.4 }} variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}>
-                        <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
-                            <div className="flex flex-col items-center justify-center gap-4">
-                                <img className="w-32 h-32" src={react} alt="React" />
-                                <h1 className="text-2xl font-bold text-white">React</h1>
-                            </div>
-                        </SpotlightCard>
-                        </motion.div>
-                        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 1, delay: 0.6 }} variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}>
-                        <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
-                            <div className="flex flex-col items-center justify-center gap-4">
-                                <img className="w-32 h-32" src={mongodb} alt="MongoDB" />
-                                <h1 className="text-2xl font-bold text-white">MongoDB</h1>
-                            </div>
-                        </SpotlightCard>
-                        </motion.div>
-                        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 1, delay: 0.8 }} variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}>
-                        <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
-                            <div className="flex flex-col items-center justify-center gap-4">
-                                <img className="w-32 h-32" src={nodejs} alt="Node.js" />
-                                <h1 className="text-2xl font-bold text-white">Node.js</h1>
-                            </div>
-                        </SpotlightCard>
-                        </motion.div>
-                        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 1, delay: 1 }} variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}>
-                        <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
-                            <div className="flex flex-col items-center justify-center gap-4">
-                                <img className="w-32 h-32" src={tailwind} alt="Tailwind CSS" />
-                                <h1 className="text-2xl font-bold text-white">Tailwindcss</h1>
-                            </div>
-                        </SpotlightCard>
-                        </motion.div>
-                        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 1, delay: 1.2 }} variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}>
-                        <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
-                            <div className="flex flex-col items-center justify-center gap-4">
-                                <img className="w-32 h-32" src={expressjs} alt="Express.js" />
-                                <h1 className="text-2xl font-bold text-white">Express.js</h1>
-                            </div>
-                        </SpotlightCard>
-                        </motion.div>
-                        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 1, delay: 1.4 }} variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}>
-                        <SpotlightCard className="items-center justify-center" spotlightColor="rgba(0, 229, 255, 0.2)">
-                            <div className="flex flex-col items-center justify-center gap-4">
-                                <img className="w-32 h-32" src={figma} alt="Figma" />
-                                <h1 className="text-2xl font-bold text-white">Figma</h1>
-                            </div>
-                        </SpotlightCard>
-                        </motion.div>
-                    </div>
-
-
-                </div>
+                
             </div>
         </div>
 
