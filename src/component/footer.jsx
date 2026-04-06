@@ -6,7 +6,7 @@ function Footer() {
         <div className="w-full py-12 bg-black border-t border-gray-500 flex flex-col">
             <div className="w-full px-24 flex flex-col md:flex-row items-center justify-between ">
                 <div className="flex flex-col">
-                    <p className="text-gray-500 text-sm">&copy; 2024 Keith Erwin Mikhail Patiño. All rights reserved.</p>
+                    <p className="text-gray-500 text-sm">&copy; 2026 Keith Erwin Mikhail Patiño. All rights reserved.</p>
                     <p className="text-gray-500 text-sm">Designed and Developed by Keith Erwin Mikhail Patiño</p>
                     <p className="text-gray-500 text-sm">Iloilo City, Philippines</p>
                 </div>
