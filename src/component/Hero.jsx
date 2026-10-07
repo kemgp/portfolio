@@ -5,7 +5,7 @@ import rightarrow from '../assets/rightarrow.svg'
 import git from '../assets/git.svg';
 import linkedin from '../assets/linkedin.svg';
 import downarrow from '../assets/downarrow.svg';
-import {motion} from 'framer-motion';
+import { motion } from 'motion/react';
 
 function Hero() {
     return (

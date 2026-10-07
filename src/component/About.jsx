@@ -8,7 +8,7 @@ import tailwind from '../assets/tailwind.svg';
 import expressjs from '../assets/expressjs.svg';
 import figma from '../assets/figma.svg';
 import html5 from '../assets/html5.svg';
-import {motion} from 'framer-motion';
+import { motion } from 'motion/react';
 function About() {
     return (
         <div className="container mx-auto px-4 py-24">
