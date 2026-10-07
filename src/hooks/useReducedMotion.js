@@ -1,0 +1,14 @@
+import { useSyncExternalStore } from 'react';
+
+const query = '(prefers-reduced-motion: reduce)';
+const getSnapshot = () => window.matchMedia(query).matches;
+const getServerSnapshot = () => false;
+const subscribe = (onChange) => {
+    const media = window.matchMedia(query);
+    media.addEventListener('change', onChange);
+    return () => media.removeEventListener('change', onChange);
+};
+
+export default function useReducedMotion() {
+    return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+}

@@ -3,7 +3,7 @@ import git from '../assets/git.svg';
 
 function Footer() {
     return (
-        <div className="w-full py-12 bg-black border-t border-gray-500 flex flex-col">
+        <footer className="w-full py-12 bg-black border-t border-gray-500 flex flex-col">
             <div className="w-full px-24 flex flex-col md:flex-row items-center justify-between ">
                 <div className="flex flex-col">
                     <p className="text-gray-500 text-sm">&copy; 2026 Keith Erwin Mikhail Patiño. All rights reserved.</p>
@@ -21,7 +21,7 @@ function Footer() {
                     </a>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 }
 

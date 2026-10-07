@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import useReducedMotion from '../hooks/useReducedMotion';
 
 const ShapeGrid = ({
   direction = 'right',
@@ -9,6 +10,7 @@ const ShapeGrid = ({
   shape = 'square',
   hoverTrailAmount = 0
 }) => {
+  const reducedMotion = useReducedMotion();
   const canvasRef = useRef(null);
   const requestRef = useRef(null);
   const numSquaresX = useRef(0);
@@ -35,7 +37,6 @@ const ShapeGrid = ({
       numSquaresY.current = Math.ceil(canvas.height / squareSize) + 1;
     };
 
-    window.addEventListener('resize', resizeCanvas);
     resizeCanvas();
 
     const drawHex = (cx, cy, size) => {
@@ -373,19 +374,27 @@ const ShapeGrid = ({
       hoveredSquareRef.current = null;
     };
 
-    canvas.addEventListener('mousemove', handleMouseMove);
-    canvas.addEventListener('mouseleave', handleMouseLeave);
-    requestRef.current = requestAnimationFrame(updateAnimation);
+    const handleResize = () => {
+      resizeCanvas();
+      drawGrid();
+    };
+    window.addEventListener('resize', handleResize);
+    drawGrid();
+    if (!reducedMotion) {
+      canvas.addEventListener('mousemove', handleMouseMove);
+      canvas.addEventListener('mouseleave', handleMouseLeave);
+      requestRef.current = requestAnimationFrame(updateAnimation);
+    }
 
     return () => {
-      window.removeEventListener('resize', resizeCanvas);
+      window.removeEventListener('resize', handleResize);
       if (requestRef.current) cancelAnimationFrame(requestRef.current);
       canvas.removeEventListener('mousemove', handleMouseMove);
       canvas.removeEventListener('mouseleave', handleMouseLeave);
     };
-  }, [direction, speed, borderColor, hoverFillColor, squareSize, shape, hoverTrailAmount]);
+  }, [direction, speed, borderColor, hoverFillColor, squareSize, shape, hoverTrailAmount, reducedMotion]);
 
-  return <canvas ref={canvasRef} className="w-full h-full border-none block"></canvas>;
+  return <canvas ref={canvasRef} aria-hidden="true" className="w-full h-full border-none block"></canvas>;
 };
 
 export default ShapeGrid;
