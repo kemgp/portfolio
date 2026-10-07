@@ -13,6 +13,7 @@ import figma from '../assets/figma.svg';
 import bayanihanPreview from '../assets/bayanihanhero.png';
 import studyusLogo from '../assets/studyus.png';
 import tidetracePreview from '../assets/tidetrace.png';
+import awesomeTodosPreview from '../assets/awesometodos.png';
 
 const projects = [
     {
@@ -71,6 +72,12 @@ const projects = [
         stack: 'MERN',
         technologies: ['MongoDB', 'Express.js', 'React', 'Node.js'],
         outcome: 'A completed application available to try through the live demo.',
+        image: awesomeTodosPreview,
+        imageAlt: 'Awesome To Dos app showing a task entry field, task list, completion checkboxes, and delete controls',
+        imageClass: 'w-full h-auto',
+        imageWidth: 2912,
+        imageHeight: 1454,
+        caption: 'Task management app preview',
         href: 'https://awesometodosapp-xorj.onrender.com/',
         sourceUrl: 'https://github.com/kemgp/awesometodosapp',
         linkLabel: 'Live Demo',
