@@ -10,11 +10,14 @@ import nodejs from '../assets/nodejs.svg';
 import tailwind from '../assets/tailwind.svg';
 import expressjs from '../assets/expressjs.svg';
 import figma from '../assets/figma.svg';
+import php from '../assets/php.svg';
+import supabase from '../assets/supabase.svg';
 
 import bayanihanPreview from '../assets/bayanihanhero.png';
 import studyusLogo from '../assets/studyus.png';
 import tidetracePreview from '../assets/tidetrace.png';
 import awesomeTodosPreview from '../assets/awesometodos.png';
+import digikonekPreview from '../assets/digikonek.png';
 
 const projects = [
     {
@@ -34,6 +37,22 @@ const projects = [
         href: 'https://tide-trace.vercel.app/',
         sourceUrl: 'https://github.com/kemgp/TideTrace',
         linkLabel: 'Visit Website',
+    },
+    {
+        name: 'Digi-Konek',
+        category: 'Development prototype',
+        description: 'A B2B electronics marketplace connecting retailers with suppliers, with supplier verification, wholesale ordering, inventory reservations, and role-based dashboards.',
+        scope: 'Project Manager & Backend Developer on the TechILO team.',
+        technologies: ['PHP', 'MySQL / MariaDB', 'HTML', 'CSS', 'JavaScript'],
+        outcome: 'A working development prototype with automated service and HTTP tests. Production preparation is ongoing.',
+        image: digikonekPreview,
+        imageAlt: 'Digi-Konek wholesale electronics marketplace sign-in page with supplier and retailer introduction',
+        imageClass: 'w-full h-auto',
+        imageWidth: 2912,
+        imageHeight: 1508,
+        caption: 'My role: Project Manager & Backend Developer',
+        href: 'https://github.com/kemgp/digi-konek',
+        linkLabel: 'Source Code',
     },
     {
         name: 'Bayanihan',
@@ -120,7 +139,7 @@ function Projects() {
                                     </div>
                                     {project.technologies && (
                                         <div>
-                                            <dt className="font-medium text-white">Technology stack · {project.stack}</dt>
+                                            <dt className="font-medium text-white">Technology stack{project.stack && ` · ${project.stack}`}</dt>
                                             <dd className="mt-2">
                                                 <ul className="flex flex-wrap gap-2">
                                                     {project.technologies.map((technology) => (
@@ -150,7 +169,8 @@ function Projects() {
                     ))}
                 </div>
                 <OtherProjects />
-                <div className="w-full mb-10">
+                <section aria-labelledby="toolkit-heading" className="w-full mb-10">
+                    <h3 id="toolkit-heading" className="font-serif text-3xl text-white sm:text-4xl">My Toolkit</h3>
                     <div className="grid grid-cols-1 min-[360px]:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 pt-8 ">
                         <Motion.div initial={reducedMotion ? false : "hidden"} whileInView="visible" viewport={{ once: true }} transition={reducedMotion ? { duration: 0 } : { duration: 1, delay: 0 }} variants={{ hidden: { opacity: 0, y: reducedMotion ? 0 : 50 }, visible: { opacity: 1, y: 0 } }}>
                         <SpotlightCard className="h-full items-center justify-center p-4! sm:p-6! lg:p-8!" spotlightColor="rgba(0, 229, 255, 0.2)">
@@ -216,10 +236,24 @@ function Projects() {
                             </div>
                         </SpotlightCard>
                         </Motion.div>
+                        <Motion.div initial={reducedMotion ? false : "hidden"} whileInView="visible" viewport={{ once: true }} transition={reducedMotion ? { duration: 0 } : { duration: 1, delay: 1.6 }} variants={{ hidden: { opacity: 0, y: reducedMotion ? 0 : 50 }, visible: { opacity: 1, y: 0 } }}>
+                        <SpotlightCard className="h-full items-center justify-center p-4! sm:p-6! lg:p-8!" spotlightColor="rgba(0, 229, 255, 0.2)">
+                            <div className="flex flex-col items-center justify-center gap-4">
+                                <img className="h-16 w-16 sm:h-24 sm:w-24 lg:h-32 lg:w-32" src={php} alt="PHP" />
+                                <p className="max-w-full break-words text-center text-lg sm:text-xl lg:text-2xl font-bold text-white">PHP</p>
+                            </div>
+                        </SpotlightCard>
+                        </Motion.div>
+                        <Motion.div initial={reducedMotion ? false : "hidden"} whileInView="visible" viewport={{ once: true }} transition={reducedMotion ? { duration: 0 } : { duration: 1, delay: 1.8 }} variants={{ hidden: { opacity: 0, y: reducedMotion ? 0 : 50 }, visible: { opacity: 1, y: 0 } }}>
+                        <SpotlightCard className="h-full items-center justify-center p-4! sm:p-6! lg:p-8!" spotlightColor="rgba(0, 229, 255, 0.2)">
+                            <div className="flex flex-col items-center justify-center gap-4">
+                                <img className="h-16 w-16 sm:h-24 sm:w-24 lg:h-32 lg:w-32" src={supabase} alt="Supabase" />
+                                <p className="max-w-full break-words text-center text-lg sm:text-xl lg:text-2xl font-bold text-white">Supabase</p>
+                            </div>
+                        </SpotlightCard>
+                        </Motion.div>
                     </div>
-
-
-                </div>
+                </section>
             </div>
         </Motion.div>
     );

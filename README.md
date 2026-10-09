@@ -115,3 +115,5 @@ After deployment, check section navigation, project links, the mobile menu, and 
 Created by **Keith Erwin Mikhail Patiño**, Iloilo City, Philippines.
 
 The portfolio uses React, Vite, Tailwind CSS, and Motion for its interface, with FormSubmit handling contact requests. Dependency versions are recorded in `package.json` and `package-lock.json`.
+
+Logo credits: the unmodified [PHP logo](https://www.php.net/download-logos.php) is by Colin Viebrock and licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The [Supabase logo](https://github.com/supabase/supabase/blob/master/packages/common/assets/images/supabase-logo-icon.svg) represents Supabase and is used in accordance with its [brand guidance](https://supabase.com/brand-assets).
