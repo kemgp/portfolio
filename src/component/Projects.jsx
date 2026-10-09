@@ -1,6 +1,7 @@
 import { motion as Motion } from 'motion/react';
 import useReducedMotion from '../hooks/useReducedMotion';
 import SpotlightCard from './SpotlightCard';
+import OtherProjects from './OtherProjects';
 import html5 from '../assets/html5.svg';
 import css from '../assets/css.svg';
 import react from '../assets/react.svg';  
@@ -148,6 +149,7 @@ function Projects() {
                         </article>
                     ))}
                 </div>
+                <OtherProjects />
                 <div className="w-full mb-10">
                     <div className="grid grid-cols-1 min-[360px]:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 pt-8 ">
                         <Motion.div initial={reducedMotion ? false : "hidden"} whileInView="visible" viewport={{ once: true }} transition={reducedMotion ? { duration: 0 } : { duration: 1, delay: 0 }} variants={{ hidden: { opacity: 0, y: reducedMotion ? 0 : 50 }, visible: { opacity: 1, y: 0 } }}>
